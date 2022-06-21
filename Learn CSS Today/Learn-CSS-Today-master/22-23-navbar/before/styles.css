@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body { margin: 0;}
+
+
+.nav {
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.link { 
+  padding: .5rem;
+}
+
+.link:hover {
+  background-color: #777;
+}
+
+.link a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}

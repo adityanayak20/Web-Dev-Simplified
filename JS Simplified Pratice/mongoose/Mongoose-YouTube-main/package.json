@@ -1,0 +1,23 @@
+{
+  "name": "mongoose-youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KritikaSharmaKS/Mongoose-YouTube.git"
+  },
+  "author": "Kritika Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KritikaSharmaKS/Mongoose-YouTube/issues"
+  },
+  "homepage": "https://github.com/KritikaSharmaKS/Mongoose-YouTube#readme"
+}

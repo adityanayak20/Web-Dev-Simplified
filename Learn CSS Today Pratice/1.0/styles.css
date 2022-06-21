@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+}
+
+.heading {
+  background-color: green;
+  margin: 4px;
+}
+
+.heading-content {
+  background-color: aquamarine;
+}
+
+.section {
+  background-color: purple;
+  color: white
+}
+
+.footer {
+  background-color: red;
+}
+
+.section h2, .section h3 {
+  background-color: greenyellow;
+  color: black;
+}
+
+li {
+  background-color: yellow;
+  color: black;
+}

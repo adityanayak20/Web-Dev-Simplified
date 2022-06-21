@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    
+    .item {
+      border: 1px solid #333;
+      background-color: #777;
+ 
+      color: yellow;
+      margin: 10px;
+    }
+    
+    .container {
+      display: flex;
+      height: 500px;
+      background-color: #CCC;
+      border: 1px solid black;
+      justify-content: flex-end;
+      justify-items: stretch;
+      flex-wrap: wrap;
+    }
+    
+    .item1 {
+      min-height: 10px;
+      min-width: 75px;
+      height: 50px;
+    }      
+    
+    .item2 {
+      min-height: 10px;
+      height: 100px;
+    }      
+    
+    .item3 {
+      min-height: 10px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+</body>
+</html>
