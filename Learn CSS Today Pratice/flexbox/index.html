@@ -21,27 +21,28 @@
     .container {
       display: flex;
       height: 500px;
+      width: 300px;
       background-color: #CCC;
       border: 1px solid black;
       justify-content: flex-end;
-      align-items: space-around;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
     
     .item1 {
-      min-height: 10px;
-      min-width: 75px;
-      height: 50px;
+      flex-grow: 1;
+      min-width: 50px;
+      min-height: 50px;
     }      
     
     .item2 {
-      min-height: 10px;
-      height: 100px;
+      min-width: 50px;
+      min-height: 100px;
     }      
     
     .item3 {
-      min-height: 10px;
-      height: 150px;
+      min-width: 100px;
+      min-height: 150px;
     }
   </style>
 </head>
