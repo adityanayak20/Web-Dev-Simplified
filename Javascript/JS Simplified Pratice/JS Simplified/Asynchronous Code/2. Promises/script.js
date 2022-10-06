@@ -145,14 +145,32 @@
 //-----------------------------------------------------------
 
 
-Promise.resolve("here")
-       .then( message => {
-        console.log(message)
-       })
-       .catch( error => {
-        console.error(error)
-       })
-       .finally(() => {
-        console.log("finally")
-       })
+// Promise.resolve("here")
+//        .then( message => {
+//         console.log(message)
+//        })
+//        .catch( error => {
+//         console.error(error)
+//        })
+//        .finally(() => {
+//         console.log("finally")
+//        })
 
+//-----------------------------------------------------------
+
+getValueWithDelay('Kyle', 250).then(value => {
+       console.log(value)
+       return getValueWithDelay('Cook', 250)
+     }).then(value => {
+       console.log(value)
+       return getValueWithDelayError('Hi', 250)
+     }).then(value => {
+       console.log(value)
+       return getValueWithDelay('Sally', 250)
+     }).catch(error => {
+       console.error(error)
+     })
+       .finally(() => {
+         console.log("Code Finished")
+       })
+//-----------------------------------------------------------       
