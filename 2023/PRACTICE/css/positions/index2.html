@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions & z-index</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+
+      .parent {
+        position: sticky;
+        top: 50px;
+        margin-top: 50px;
+        padding: .25rem;
+        background-color: lightskyblue;
+      }
+
+      .parent-2 {
+        margin-top: 50px;
+        padding: .25rem;
+        background-color: lightskyblue;
+      }
+      
+      .child1 {
+        padding: .25rem;
+        background-color: lightcoral;
+      }      
+
+      .child2 {
+        padding: .25rem;
+        background-color: lightgreen;
+      }
+      .child3 {
+        
+        padding: .25rem;
+        background-color: peru;
+      }      
+
+    </style>
+  </head>
+
+  <body>
+    <div class="parent" style="z-index: 10;">
+      Parent
+      <div class="child1" style="z-index: 7;">One</div>
+    <div class="child2" style="z-index: 4;">Two</div>
+    <div class="child3"style="z-index: 9;">Three</div>
+    </div>
+
+
+  <div class="parent-2" style="z-index: 1;">
+    Parent 2
+    <div class="child1" style="z-index: 20;">One</div>
+    <div class="child2" style="z-index: 40;">Two</div>
+    <div class="child3"style="z-index: 30;">Three</div>
+  </div>
+</body>
+</html>
